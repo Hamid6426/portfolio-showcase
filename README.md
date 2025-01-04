@@ -1,41 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Showcase
+
+A personal portfolio website built with Next.js, showcasing projects, blog posts, and contact information.
+
+## Features
+
+- Project Showcase: A curated selection of projects, each with its own details page.
+- Blog: A collection of articles and stories, with support for dynamic routing.
+- Contact: A simple contact page with a form and social media links.
+- Responsive Design: A mobile-friendly design that adapts to different screen sizes.
 
 ## Getting Started
 
-First, run the development server:
+- Clone the repository: git clone https://github.com/Hamid6426/portfolio-showcase.git
+- Install dependencies: npm install
+- Start the development server: npm run dev
+- This will start the front-end as well as back-end concurrently
+- Open http://localhost:3000/ in your browser to see the website in action
+- Confirm if the back-end is running by checking the logs in the terminal
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Use for Yourself
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Follow the "Getting Started" steps to clone and run the project.
+- Add a `.env` file in the root directory and include the necessary environment variables.
+- Set up a MongoDB cluster and update the `.env` file with the database connection string.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- The project is organized into the following folders:
+- packages/backend: Backend code, including Prisma schema and API routes.
+- packages/frontend: Frontend code, including Next.js pages, components, and utilities.
+- public: Static assets, such as images and videos.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js: A popular React-based framework for building server-side rendered and statically generated websites.
+- Tailwind CSS: A utility-first CSS framework for building custom user interfaces.
+- Prisma: A modern ORM for Node.js and TypeScript, used for database modeling and querying.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
+Contributions are welcome! If you'd like to report a bug, suggest a feature, or submit a pull request, please feel free to do so.
 
-## Deploy on Vercel
+## License
+This project is licensed under the MIT License. See LICENSE for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Thanks to Vercel for providing the Next.js framework and hosting platform.
+- Thanks to the Tailwind CSS team for creating a fantastic utility-first CSS framework.
+- Thanks to the Prisma team for building a powerful and intuitive ORM.
 
 ---
+
 ```
 root/
 ├── packages/
@@ -87,7 +103,3 @@ root/
 ├── tsconfig.json
 └── package.json
 ```
-
-git add .
-git commit -m "Added "
-git push -u origin main
